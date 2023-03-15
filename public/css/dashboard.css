@@ -1,0 +1,55 @@
+.widget__real-time-staff {
+    width: 100%;
+
+    position: relative;
+}
+
+.widget__real-time-staff .staff-item {
+    margin: 0 0 0.2rem 0;
+    width: 100%;
+
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid var(--middle-main-color);
+}
+
+.widget__real-time-staff .staff-icon {
+    margin: 0;
+    padding: 1rem;
+    width: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font: var(--font-large-bold);
+    color: var(--light-font-color);
+    background-color: var(--middle-main-color);
+}
+
+.widget__real-time-staff .staff-day {
+    width: 100%;
+
+    display: flex;
+}
+
+.widget__real-time-staff .staff-day div {
+    height: 100%;
+    width: inherit;
+
+    box-sizing: border-box;
+    border-left: 1px solid var(--middle-main-color);
+    background-color: var(--light-main-color);
+}
+
+.timeline {
+    width: 2px;
+    height: 100%;
+
+    position: absolute;
+    left: 4rem;
+    top: 0;
+
+    background-color: red;
+}
+

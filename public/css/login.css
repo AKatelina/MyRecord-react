@@ -1,0 +1,163 @@
+/*ПЕРЕМЕННЫЕ*/
+@import url("variables.css");
+
+.app {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font: var(--font-normal);
+    color: var(--dark-font-color);
+    background-color: var(--light-main-color);
+}
+
+.header {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+
+    background-color: #FFF;
+}
+
+.header .logo-text {
+    margin-right: auto;
+
+    font: var(--font-large-bold);
+}
+
+.header .log-link {
+    margin: 0 0 0 1rem;
+
+    font: var(--font-normal);
+    color: var(--middle-main-color);
+}
+
+.page-max-w {
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    max-width: 1240px;
+    min-height: 56px;
+
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+/*ФОРМА ВХОДА*/
+.form-sign {
+    margin: 5rem 0 3rem ;
+    padding: 1rem;
+    width: 100%;
+    max-width: 26rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+
+    border-radius: 5px;
+    font: var(--font-large);
+}
+
+.form-sign h1 {
+    margin: 0.5rem 0;
+    padding: 0;
+
+    font: var(--font-largest-bold);
+}
+
+.form-sign div {
+    margin: 0;
+    padding: 0.75rem 0;
+    width: 100%;
+}
+
+.login-variants a:hover {
+    color: var(--dark-main-color);
+}
+
+.form-sign input {
+    margin: 0;
+    padding: 0.75rem 1rem;
+    width: 100%;
+
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #b3b3b3;
+    font: var(--font-large);
+}
+
+.form-sign input.checkbox {
+    width: auto;
+
+    display: inline;
+}
+
+.form-sign input:active,
+.form-sign input:hover,
+.form-sign input:focus,
+.form-sign input.checkbox:active,
+.form-sign input.checkbox:hover,
+.form-sign input.checkbox:focus{
+    background-color: #FFFFFF;
+}
+
+.form-sign a.btn {
+    margin: 0.75rem 0 1.4rem 0;
+    padding: 0.75rem 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    border-radius: 5px;
+    color: var(--light-font-color);
+    background-color: var(--middle-main-color);
+    transition: var(--transition-l);
+}
+
+.form-sign a.btn:hover {
+    background-color: var(--dark-main-color);
+}
+
+/*Форма входа---Ссылки*/
+.login-variants a.active {
+    text-decoration: underline;
+}
+
+.form-sign a.link {
+    margin: 0;
+    padding: 0.75rem 0;
+
+    display: inline;
+
+    border-radius: 5px;
+    font: var(--font-normal);
+    color: var(--middle-main-color);
+}
+
+.form-sign a.link:hover {
+    color: var(--dark-main-color);
+}
+
+.form-sign span {
+    font: var(--font-normal);
+}
+
+hr {
+    margin: 0.5rem 0 0 0;
+    width: 5rem;
+
+    border-style: none;
+    height: 1px;
+    background-color: var(--dark-font-color);
+}

@@ -1,0 +1,318 @@
+/*ПЕРЕМЕННЫЕ*/
+@import url("variables.css");
+
+.app {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    font: var(--font-normal);
+    color: var(--dark-font-color);
+}
+
+/*БОКОВОЕ МЕНЮ*/
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: var(--sidebar-width);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    color: var(--light-font-color);
+    background: var(--middle-main-color);
+    transition: var(--transition-w);
+}
+
+/*Боковое меню---Настройки скролла*/
+.sidebar::-webkit-scrollbar {
+    background-color: var(--middle-main-color);
+    width: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--dark-main-color);
+}
+
+/*Левое меню---Мобильная версия*/
+.sidebar__mb-open {
+    width: var(--sidebar-width) !important;
+}
+
+.sidebar__mb-close-sidebar-section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    display: none;
+}
+
+.sidebar__mb-btn-close-sidebar {
+    padding: 1rem;
+
+    display: none;
+}
+
+.sidebar__mb-btn-close-sidebar img {
+    height: var(--large-icons-size);
+    width: auto;
+}
+
+/*МЕНЮ ФИЛИАЛОВ*/
+
+/*Меню филиалов---Верхняя панель*/
+.sidebar__current-filial {
+    margin: 0;
+    padding: 1rem;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    cursor: pointer;
+    transition: var(--transition-l);
+}
+
+.sidebar__current-filial:hover {
+    background-color: var(--dark-main-color);
+}
+
+.sidebar__current-filial_dark {
+    background-color: var(--dark-main-color);
+}
+
+.sidebar__current-filial .company {
+    font: var(--font-large-bold);
+}
+
+.sidebar__current-filial .filial {
+    font: var(--font-small);
+}
+
+.choose-filial-btn {
+    display: flex;
+    align-items: center;
+}
+
+.choose-filial-arrow {
+    height: var(--middle-icons-size);
+    width: auto;
+}
+
+.sidebar__btn-show-choose-filial { /*js*/
+    transform: rotate(180deg);
+}
+
+/*Меню филиалов---Открывающийся поиск и список*/
+.sidebar__choose-filial {
+    margin: 0;
+    padding: 0 0 0.5rem 0;
+
+    display: none;
+
+    background-color: var(--dark-main-color);
+}
+
+.sidebar__choose-filial-show {
+    display: block;
+}
+
+/*Меню филиалов---Строка поиска филиалов*/
+.sidebar__choose-filial-search {
+    margin: 0;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.sidebar__choose-filial-search div {
+    position: relative;
+}
+
+.sidebar__choose-filial-search input {
+    margin: 0;
+    padding: 4px 8px 4px 28px;
+    width: 100%;
+
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: var(--light-main-color);
+    border-width: 1px;
+    font: var(--font-small);
+}
+
+
+.sidebar__choose-filial-search button {
+    position: absolute;
+    left: 9px;
+    top: 5px;
+}
+
+.sidebar__choose-filial-search button img {
+    height: var(--small-icons-size);
+    width: auto;
+}
+
+.sidebar__choose-filial-search input:hover,
+.sidebar__choose-filial-search input:focus,
+.sidebar__choose-filial-search input:active {
+    background-color: #FFF;
+}
+
+/*Меню филиалов---Пункты меню филиалов*/
+.sidebar__filial-li {
+    margin: 0;
+    padding: 0.5rem 1rem 0.5rem 2.3rem;
+
+    display: block;
+
+    font: var(--font-small);
+    cursor: pointer;
+}
+
+.sidebar__choose-filial i {
+    opacity: 0;
+    transition: var(--transition-l);
+}
+
+.sidebar__filial-li:hover i {
+    opacity: 1;
+    transition: var(--transition-l);
+}
+
+/*НИЖНЯЯ ПАНЕЛЬ НАСТРОЕК*/
+.sidebar__footer {
+    margin: auto 0 0 0;
+    padding: 0.5rem 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    background-color: var(--dark-main-color);
+}
+
+.sidebar__footer a {
+    margin: 0 0.5rem;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 5px;
+    transition: var(--transition-l);
+}
+
+.sidebar__footer a:hover {
+    background-color: var(--middle-main-color);
+}
+
+.sidebar__footer .logout {
+    margin: 0;
+    padding: 0.5rem 0.6rem 0.5rem 0.4rem;
+    height: var(--middle-icons-size);
+    width: auto;
+}
+
+.sidebar__footer .settings,
+.sidebar__footer .chat {
+    margin: 0;
+    padding: 0.5rem;
+    height: var(--middle-icons-size);
+    width: auto;
+}
+
+/*МЕНЮ СТРАНИЦ*/
+.sidebar__pages {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.sidebar__pages a {
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: var(--transition-l);
+}
+
+.sidebar__pages a:hover {
+    background-color: var(--dark-main-color);
+}
+
+/*------------------------------------------*/
+
+/*КОНТЕНТ*/
+.content {
+    margin: 0 0 0 var(--sidebar-width);
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*НАВБАР*/
+.navbar {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    height: var(--navbar-height);
+    width: auto;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--light-main-color);
+    font: var(--font-large);
+}
+
+/*Навбар---Мобильное меню*/
+.navbar__mb-btn-open-sidebar {
+    padding: 0 1rem 0 0;
+
+    display: none;
+}
+
+.navbar__mb-btn-open-sidebar img {
+    height: var(--large-icons-size);
+    width: auto;
+}
+
+/*Навбар---Хлебные крошки*/
+.navbar__breadcrumbs {
+    font: var(--font-normal);
+}
+
+/*РАБОЧЕЕ ПРОСТРАНСТВО*/
+.main {
+    margin: 0;
+    padding: 1rem;
+}
+
+
+/*ВСЁ ДЛЯ МОБИЛЬНОЙ ВЕРСИИ*/
+@media (max-width: 767px) {
+    .content {
+        margin: 0;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+    }
+
+    .navbar__mb-btn-open-sidebar,
+    .sidebar__mb-close-sidebar-section,
+    .sidebar__mb-btn-close-sidebar {
+        display: flex;
+    }
+}

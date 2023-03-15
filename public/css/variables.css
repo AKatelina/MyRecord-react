@@ -1,0 +1,70 @@
+:root {
+    --dark-font-color: #2F4F4F;
+    --light-font-color: #FFF;
+
+    --dark-main-color: #2777A5;
+    --middle-main-color: #2E8CC2;
+    --light-main-color: #F0F8FF;
+
+    --main-font-style: "Open Sans", sans-serif;
+    --font-largest-bold: 800 33px "Open Sans", sans-serif;
+    --font-large-bold: 800 20px "Open Sans", sans-serif;
+    --font-large: 400 20px "Open Sans", sans-serif;
+    --font-normal: 400 16px "Open Sans", sans-serif;
+    --font-small: 400 14px "Open Sans", sans-serif;
+
+    --transition-w: width 0s;
+    --transition-l: linear .2s;
+
+    --large-icons-size: 31px;
+    --middle-icons-size: 22px;
+    --small-icons-size: 14px;
+
+    --sidebar-width: 13rem;
+    --navbar-height: 40px;
+}
+
+/*ОСНОВНОЕ*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+.body-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*Основное---Сброс стилей кнопок*/
+button {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    transition: none;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+    background-color: transparent;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    transition: none;
+}
+
+label {
+    display: none;
+}

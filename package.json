@@ -1,0 +1,60 @@
+{
+  "name": "widget",
+  "version": "0.1.1",
+  "private": true,
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.10.20",
+    "@amcharts/amcharts4-fonts": "^4.0.1",
+    "@amcharts/amcharts4-geodata": "^4.1.20",
+    "@ckeditor/ckeditor5-build-classic": "^31.0.0",
+    "@ckeditor/ckeditor5-react": "^3.0.3",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.5",
+    "axios": "^0.20.0",
+    "bootstrap": "^5.1.0",
+    "bootstrap-icons": "^1.8.3",
+    "chart.js": "^3.3.2",
+    "js-cookie": "^2.2.1",
+    "react": "^16.13.1",
+    "react-axios": "^2.0.3",
+    "react-bootstrap": "^2.0.0-beta.6",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-meta-tags": "^1.0.1",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3",
+    "react-yandex-maps": "^4.6.0",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "typescript": "~3.8.0",
+    "universal-cookie": "^4.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
