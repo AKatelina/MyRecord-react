@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/*ОСНОВНОЕ*/
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: inherit;
+  font: 500 16px "Helvetica", "Open Sans", sans-serif;
+  color: #3a6ec2;
+  transition: linear 0.2s;
+}
+
+a:hover {
+  color: #215bb4;
+}
+
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font: 500 16px "Helvetica", "Open Sans", sans-serif;
+  color: #2F4F4F;
+  background-color: #F0F8FF;
+}
+.main .max-wrap {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1440px;
+}
+.main .header {
+  margin: 0 auto auto auto;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+.main .header .max-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 532px) {
+  .main .header .max-wrap {
+    max-width: 468px;
+  }
+}
+.main .header a {
+  margin: 0 0 0 1rem;
+}
+@media screen and (max-width: 320px) {
+  .main .header a {
+    margin-left: 0.75rem;
+    font: 400 14px "Helvetica", "Open Sans", sans-serif;
+  }
+}
+.main .header .logo {
+  margin: 0 auto 0 0;
+  color: #2F4F4F;
+  font: 800 20px "Helvetica", "Open Sans", sans-serif;
+}
+@media screen and (max-width: 320px) {
+  .main .header .logo {
+    font: 500 16px "Helvetica", "Open Sans", sans-serif;
+    font-weight: 800;
+  }
+}
+@media screen and (max-width: 532px) {
+  .main .header {
+    padding: 1rem;
+  }
+}
+.main form {
+  margin: 2rem 0;
+  padding: 1rem;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  font: 500 18px "Helvetica", "Open Sans", sans-serif;
+}
+@media screen and (max-width: 450px) {
+  .main form {
+    width: 100vw;
+  }
+}
+.main form h1 {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+  text-align: center;
+  font: 800 33px "Helvetica", "Open Sans", sans-serif;
+}
+@media screen and (max-width: 425px) {
+  .main form h1 {
+    font: 800 20px "Helvetica", "Open Sans", sans-serif;
+  }
+}
+.main form div {
+  margin: 0.75rem 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.main form input {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font: 500 18px "Helvetica", "Open Sans", sans-serif;
+  border: 1px solid #ADADAD;
+  background-color: #FFFFFF;
+}
+@media screen and (max-width: 425px) {
+  .main form input {
+    font: 500 16px "Helvetica", "Open Sans", sans-serif;
+  }
+}
+@media screen and (max-width: 325px) {
+  .main form input {
+    padding: 0.75rem 0.5rem;
+  }
+}
+.main form input[type=checkbox] {
+  margin: 0 0.2rem;
+  width: 1rem;
+  height: 1rem;
+  display: inline;
+}
+.main form .checkbox-wrap {
+  display: inline-block;
+  text-align: center;
+  font: 500 18px "Helvetica", "Open Sans", sans-serif;
+}
+.main form .checkbox-wrap a {
+  font: 500 18px "Helvetica", "Open Sans", sans-serif;
+}
+@media screen and (max-width: 425px) {
+  .main form .checkbox-wrap a {
+    font: 400 14px "Helvetica", "Open Sans", sans-serif;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main form .checkbox-wrap {
+    font: 400 14px "Helvetica", "Open Sans", sans-serif;
+  }
+}
+.main form .btn {
+  margin: 0.75rem 0 1.4rem 0;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font: 500 18px "Helvetica", "Open Sans", sans-serif;
+  color: #FFF;
+  background-color: #3a6ec2;
+}
+@media screen and (max-width: 425px) {
+  .main form .btn {
+    font: 500 16px "Helvetica", "Open Sans", sans-serif;
+  }
+}
+.main form .btn:hover {
+  background-color: #215bb4;
+}
+.main .footer {
+  margin-top: auto;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  font: 400 14px "Helvetica", "Open Sans", sans-serif;
+}
+.main .footer .max-wrap {
+  text-align: center;
+}
+.main .footer a {
+  font: 400 14px "Helvetica", "Open Sans", sans-serif;
+}
+
+.password-toggle-input {
+  position: relative;
+}
+.password-toggle-input input {
+  padding: 0.75rem 3rem 0.75rem 1rem !important;
+}
+.password-toggle-input .eye-open-icon,
+.password-toggle-input .eye-close-icon {
+  position: absolute;
+  right: 1rem;
+  width: 1rem;
+  height: 80%;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=login.css.map */

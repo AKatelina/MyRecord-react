@@ -1,19 +1,57 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import {
+    createBrowserRouter,
+    RouterProvider,
+} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
+import Root from './components/login/root'
+import Login from './components/login/login';
+import Registration from "./components/login/registration";
+import NewPassword from "./components/login/new-password";
+import PasswordRecovery from "./components/login/password-recovery";
+
+
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    document.getElementById('root') as HTMLElement
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Root/>,
+        // errorElement: <ErrorPage />
+    },
+    {
+        path: "security/",
+        element: <Root/>,
+        children: [
+            {
+                path: "login/",
+                element: <Login/>,
+            },
+            {
+                path: "registration/",
+                element: <Registration/>,
+            },
+            {
+                path: "new-password",
+                element: <NewPassword/>,
+            },
+            {
+                path: "password-recovery/",
+                element: <PasswordRecovery/>,
+            },
+        ]
+    },
+
+]);
+
+root.render(
+    <React.StrictMode>
+        <RouterProvider router={router}/>
+    </React.StrictMode>
+);
+
 reportWebVitals();

@@ -1,0 +1,26 @@
+//Цвет текста
+$dark-font-color: #2F4F4F;
+$light-font-color: #FFF;
+
+//Цвета элементов
+$dark-main-color: #215bb4;
+$middle-main-color: #3a6ec2;
+$neutral-main-color: #ADADAD;
+$light-main-color: #F0F8FF;
+$white-main-color: #FFFFFF;
+
+//Базовые шрифты
+$main-font-style: "Helvetica", "Open Sans", sans-serif;
+$font-largest-bold: 800 33px $main-font-style;
+$font-large-bold: 800 20px $main-font-style;
+$font-large: 500 18px $main-font-style;
+$font-normal: 500 16px $main-font-style;
+$font-small: 400 14px $main-font-style;
+
+//Анимация
+$transition-w: width 0s; //для меню
+$transition-l: linear .2s;
+
+$large-icons-size: 31px;
+$middle-icons-size: 22px;
+$small-icons-size: 14px;
