@@ -210,8 +210,8 @@ a:hover {
 .password-toggle-input .eye-open-icon,
 .password-toggle-input .eye-close-icon {
   position: absolute;
-  right: 1rem;
-  width: 1rem;
+  right: 1.2rem;
+  width: 1.2rem;
   height: 80%;
   cursor: pointer;
 }

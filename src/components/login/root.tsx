@@ -2,7 +2,7 @@ import React from 'react';
 import {Outlet, Link} from "react-router-dom";
 import '../../css/login/login.css';
 
-function Login() {
+function Security() {
     return (
         <div className="main">
             <div className="header">
@@ -12,17 +12,19 @@ function Login() {
                     <Link to="/security/registration">Регистрация</Link>
                 </div>
             </div>
+
             <Outlet/>
+
             <div className="footer">
                 <div className="max-wrap">
-            <span>
-                @ 2023 ООО
-                <Link to="/security/login">&nbsp;"Айти Вертекс"</Link>
-            </span>
+                    <span>
+                        @ 2023 ООО
+                        <Link to="/security/login">&nbsp;"Айти Вертекс"</Link>
+                    </span>
                 </div>
             </div>
         </div>
     );
 }
 
-export default Login;
+export default Security;

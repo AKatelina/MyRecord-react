@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {
-    createBrowserRouter,
-    RouterProvider,
-} from "react-router-dom";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
 import Root from './components/login/root'
@@ -20,7 +17,7 @@ const root = ReactDOM.createRoot(
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Root/>,
+        element: <Root/>
         // errorElement: <ErrorPage />
     },
     {
@@ -29,23 +26,22 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "login/",
-                element: <Login/>,
+                element: <Login/>
             },
             {
                 path: "registration/",
-                element: <Registration/>,
+                element: <Registration/>
             },
             {
                 path: "new-password",
-                element: <NewPassword/>,
+                element: <NewPassword/>
             },
             {
                 path: "password-recovery/",
-                element: <PasswordRecovery/>,
+                element: <PasswordRecovery/>
             },
         ]
     },
-
 ]);
 
 root.render(

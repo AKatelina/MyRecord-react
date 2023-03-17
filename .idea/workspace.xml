@@ -2,31 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59df2f56-56be-4ccb-9152-266bc0aef8df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/icons/login/eye-fill.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/login/eye-slash-fill.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/new-password.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/password-recovery.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/registration.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/root.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/login/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/login/login.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/login/login.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/new-password.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/new-password.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/password-recovery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/password-recovery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/registration.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/login/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/login/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678875040832</updated>
       <workItem from="1678875042810" duration="3297000" />
-      <workItem from="1678989922666" duration="8891000" />
+      <workItem from="1678989922666" duration="18706000" />
     </task>
     <servers />
   </component>
@@ -121,5 +104,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="186" y="10" key="SettingsEditor/0.0.1366.728/-1920.-305.1920.1040@0.0.1366.728" timestamp="1678997873967" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1679072178588">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728/-1920.-305.1920.1040@0.0.1366.728" timestamp="1679072178588" />
   </component>
 </project>
