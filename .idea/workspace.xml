@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59df2f56-56be-4ccb-9152-266bc0aef8df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/css/lk/lk-base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/log/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/new-password.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/log/new-password.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/password-recovery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/log/password-recovery.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/log/registration.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/log/log-base.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/login/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/log/log.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/login/login.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/log/log.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/login/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/log/log.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/log/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/log/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/log/registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/log/registration.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,7 +41,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
-    <property name="ts.external.directory.path" value="E:\work\MyRecords\MyRecord-react\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -66,7 +57,7 @@
       <recent name="E:\work\MyRecords\MyRecord-react\public\css" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -79,41 +70,23 @@
       <updated>1678875040832</updated>
       <workItem from="1678875042810" duration="3297000" />
       <workItem from="1678989922666" duration="22631000" />
+      <workItem from="1679123729398" duration="3459000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="387" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1679117658644">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="387" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/-1920.-305.1920.1040@0.0.1366.728" timestamp="1679117658644" />
-    <state x="322" y="164" key="EditFileWatcherDialog" timestamp="1678997891551">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="322" y="164" key="EditFileWatcherDialog/0.0.1366.728/-1920.-305.1920.1040@0.0.1366.728" timestamp="1678997891551" />
-    <state x="186" y="10" key="SettingsEditor" timestamp="1678997873967">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="186" y="10" key="SettingsEditor/0.0.1366.728/-1920.-305.1920.1040@0.0.1366.728" timestamp="1678997873967" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1679072178588">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728/-1920.-305.1920.1040@0.0.1366.728" timestamp="1679072178588" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

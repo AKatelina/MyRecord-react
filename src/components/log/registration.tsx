@@ -1,14 +1,23 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import axios from "axios";
 
 class Registration extends React.Component<any, any> {
     constructor(props: any) {
         super(props);
         this.state = {
             newPasswordType: true,
-            repeatPasswordType: true
+            repeatPasswordType: true,
+            phone: '',
+            pass1: '',
+            pass2: '',
+
         };
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.loginReg = this.loginReg.bind(this);
     }
+
+
 
     toggleNewPasswordType() {
         this.setState({
@@ -21,6 +30,40 @@ class Registration extends React.Component<any, any> {
             repeatPasswordType: !(this.state.repeatPasswordType)
         });
     }
+    handleInputChange(event: any) {
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
+
+        this.setState({
+            [name]: value
+        });
+    }
+    loginReg() {
+        if (this.state.pass1 == this.state.pass2) {
+            const data = {phone: this.state.phone, password: this.state.pass1};
+            axios({
+
+                url: 'http://localhost:8085/registration',
+                headers: {'Content-Type': 'application/json'},
+                withCredentials: true,
+                method: "POST",
+                data: data,
+            })
+                .then(result => {
+
+                    if (result.status == 204 || result.status == 200) {
+                        this.setState({pass1: '', pass2: ''});
+
+                    }
+
+                }).catch(error => {
+                // this.changeError(true)
+            })
+        }
+
+
+    }
 
     render() {
         return (
@@ -29,14 +72,24 @@ class Registration extends React.Component<any, any> {
                     <h1>РЕГИСТРАЦИЯ</h1>
 
                     <div>
-                        <input id="registration-mail" type="email" placeholder="Email"/>
+                        <input
+                            name="phone"
+
+                            value={this.state.phone}
+                            onChange={this.handleInputChange}
+                            id="registration-mail" type="phone" placeholder="phone"/>
                         <label htmlFor="registration-mail" hidden>Почта</label>
                     </div>
 
                     <div className="password-toggle-input">
-                        <input id="registration-password"
-                               type={this.state.newPasswordType ? 'password' : 'text'}
-                               placeholder="Пароль"/>
+                        <input
+                            name="pass1"
+
+                            value={this.state.pass1}
+                            onChange={this.handleInputChange}
+                            id="registration-password"
+                            type={this.state.newPasswordType ? 'password' : 'text'}
+                            placeholder="Пароль"/>
                         <label htmlFor="registration-password" hidden>Пароль</label>
                         <img onClick={() => this.toggleNewPasswordType()} className="eye-open-icon"
                              src={this.state.newPasswordType ?
@@ -45,9 +98,14 @@ class Registration extends React.Component<any, any> {
                     </div>
 
                     <div className="password-toggle-input">
-                        <input id="registration-password-repeat"
-                               type={this.state.repeatPasswordType ? 'password' : 'text'}
-                               placeholder=" Повторите пароль"/>
+                        <input
+                            name="pass2"
+
+                            value={this.state.pass2}
+                            onChange={this.handleInputChange}
+                            id="registration-password-repeat"
+                            type={this.state.repeatPasswordType ? 'password' : 'text'}
+                            placeholder=" Повторите пароль"/>
                         <label htmlFor="registration-password-repeat" hidden>Повторите пароль</label>
                         <img onClick={() => this.toggleRepeatPasswordType()} className="eye-open-icon"
                              src={this.state.repeatPasswordType ?
@@ -64,7 +122,7 @@ class Registration extends React.Component<any, any> {
                         <a href="#">обработку персональных данных</a>
                     </div>
 
-                    <Link className="btn" to="/security/login">Зарегистрироваться</Link>
+                    <button type={"button"} onClick={() => this.loginReg()} className="btn">Зарегистрироваться</button>
                 </form>
             </div>
         )
