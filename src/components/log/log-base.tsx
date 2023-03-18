@@ -1,8 +1,8 @@
 import React from 'react';
 import {Outlet, Link} from "react-router-dom";
-import '../../css/login/login.css';
+import '../../css/log/log.css';
 
-function Security() {
+function LogBase() {
     return (
         <div className="main">
             <div className="header">
@@ -27,4 +27,4 @@ function Security() {
     );
 }
 
-export default Security;
+export default LogBase;

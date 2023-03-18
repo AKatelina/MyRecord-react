@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
-import Root from './components/login/root'
-import Login from './components/login/login';
-import Registration from "./components/login/registration";
-import NewPassword from "./components/login/new-password";
-import PasswordRecovery from "./components/login/password-recovery";
+import LogBase from './components/log/log-base'
+import Login from './components/log/login';
+import Registration from "./components/log/registration";
+import NewPassword from "./components/log/new-password";
+import PasswordRecovery from "./components/log/password-recovery";
 
 
 const root = ReactDOM.createRoot(
@@ -17,12 +17,12 @@ const root = ReactDOM.createRoot(
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Root/>
+        element: <LogBase/>
         // errorElement: <ErrorPage />
     },
     {
         path: "security/",
-        element: <Root/>,
+        element: <LogBase/>,
         children: [
             {
                 path: "login/",
