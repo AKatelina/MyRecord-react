@@ -1,22 +1,37 @@
 import React from 'react';
-import {Outlet, Link} from "react-router-dom";
+import {Outlet, Link,useNavigate} from "react-router-dom";
 import axios from "axios";
 import '../../css/lk/lk-base.css';
+import Cookies from "universal-cookie";
+import Login from "../security/login";
 
 class LkBase extends React.Component<any, any> {
 
     securityLogout() {
-        axios({
-            url: 'http://localhost:8085/api/logout',
-            withCredentials: true,
-            method: "GET"
-        }).then(result => {
-            if (result.status == 204 || result.status == 200) {
+        const cookies = new Cookies();
 
-            }
-        }).catch(error => {
-            // this.changeError(true)
-        })
+
+        if(cookies.get("jwt_hp")){
+            axios({
+                url: 'http://localhost:8085/logout',
+                withCredentials: true,
+                method: "GET"
+            }).then(result => {
+                this.props.navigate("/login");
+                let navigate = useNavigate();
+                return <Login {...this.props} navigate={navigate} />
+                // if (result.status == 204 || result.status == 200) {
+                //     navigate("/path/to/push");
+                // }
+            }).catch(error => {
+                // this.changeError(true)
+
+            })
+        }
+
+    }
+    componentDidMount() {
+
     }
 
     render() {
@@ -30,10 +45,10 @@ class LkBase extends React.Component<any, any> {
                     </div>
 
                     <div className="footer">
-                        <Link to="/login" onClick={() => this.securityLogout()}>
+                        <button type={"button"} onClick={() => this.securityLogout()}>
                             <img className="logout" src="images/icons/lk-base/box-arrow-left.svg"
                                  alt="Выход из личного кабинета"/>
-                        </Link>
+                        </button>
                     </div>
                 </div>
 

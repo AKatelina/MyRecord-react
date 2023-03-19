@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59df2f56-56be-4ccb-9152-266bc0aef8df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/icons/lk-base/box-arrow-left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/lk-base/chevron-down.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/lk-base/list.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/lk-base/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons/lk-base/x-lg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/lk/lk-base.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/log/log-base.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/security/security-base.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/log/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/security/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/log/new-password.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/security/new-password.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/log/password-recovery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/security/password-recovery.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/log/registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/security/registration.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/lk/lk-base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/lk/lk-base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/lk/lk-base.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/lk/lk-base.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/lk/lk-base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/lk/lk-base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/log/log.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/security/security.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/log/log.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/security/security.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/log/log.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/security/security.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/lk/lk-base.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/lk/lk-base.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,9 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -77,7 +59,7 @@
       <recent name="E:\work\MyRecords\MyRecord-react\public" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -103,13 +85,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="387" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1679219195258">
