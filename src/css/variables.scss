@@ -24,3 +24,46 @@ $transition-l: linear .2s;
 $large-icons-size: 31px;
 $middle-icons-size: 22px;
 $small-icons-size: 14px;
+
+/*ОСНОВНОЕ*/
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
+  -webkit-tap-highlight-color: transparent; // чтобы на мобилке не выделялись ссылки при наведении
+}
+
+a {
+  text-decoration: inherit;
+
+  font: $font-normal;
+  color: $middle-main-color;
+  transition: $transition-l;
+}
+
+a:hover {
+  color: $dark-main-color;
+}
+
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: none;
+}
+
+.hide {
+  display: none;
+}

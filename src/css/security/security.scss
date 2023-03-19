@@ -4,43 +4,12 @@
 $max-form-width: 450px;
 $elements-radius: 5px;
 
-
-/*ОСНОВНОЕ*/
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-
-  -webkit-tap-highlight-color: transparent; // чтобы на мобилке не выделялись ссылки при наведении
-}
-
-a {
-  text-decoration: inherit;
-
-  font: $font-normal;
-  color: $middle-main-color;
-  transition: $transition-l;
-}
-
-a:hover {
-  color: $dark-main-color;
-}
-
-:active, :hover, :focus {
-  outline: 0;
-  outline-offset: 0;
-}
-
-.hide {
-  display: none;
-}
-
 //БАЗОВЫЕ СТИЛИ
 // ---СТРАНИЦ ВХОДА,
 // --РЕГИСТРАЦИИ,
-// --ВОССТАНОВЛЕНИЯ ПАРОЛЯ
-.main {
+// --ВОССТАНОВЛЕНИЯ ПАРОЛЯ,
+// -- СОЗДАНИЕ НОВОГО ПАРОЛЯ
+.security-main {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -202,10 +171,12 @@ a:hover {
       text-align: center;
       box-sizing: border-box;
 
+      border: none;
       border-radius: $elements-radius;
       font: $font-large;
       color: $light-font-color;
       background-color: $middle-main-color;
+      cursor: pointer;
 
       @media screen and (max-width: 425px) {
         font: $font-normal;
@@ -217,7 +188,7 @@ a:hover {
     }
   }
 
-  .footer {
+  .security-footer {
     margin-top: auto;
     padding: 1rem;
     width: 100%;
@@ -234,24 +205,26 @@ a:hover {
       font: $font-small;
     }
   }
+
+
+  //Для показа, скрытия пароля
+  .password-toggle-input {
+    position: relative;
+
+    input {
+      padding: 0.75rem 3.0rem 0.75rem 1rem !important;
+    }
+
+    .eye-open-icon,
+    .eye-close-icon {
+      position: absolute;
+      right: 1rem;
+
+      width: 1rem;
+      height: 80%;
+      cursor: pointer;
+    }
+  }
 }
 
 
-//Для показа, скрытия пароля
-.password-toggle-input {
-  position: relative;
-
-  input {
-    padding: 0.75rem 3.0rem 0.75rem 1rem !important;
-  }
-
-  .eye-open-icon,
-  .eye-close-icon {
-    position: absolute;
-    right: 1rem;
-
-    width: 1rem;
-    height: 80%;
-    cursor: pointer;
-  }
-}

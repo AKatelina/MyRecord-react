@@ -19,7 +19,7 @@ class PasswordRecovery extends React.Component<any, any> {
                         <label htmlFor="email-to-recover" hidden>Email</label>
                     </div>
 
-                    <Link className="btn" to="/security/new-password">Отправить ссылку восстановления</Link>
+                    <Link className="btn" to="/new-password">Отправить ссылку восстановления</Link>
                 </form>
             </div>
         );

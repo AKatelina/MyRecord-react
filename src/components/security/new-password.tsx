@@ -50,7 +50,7 @@ class NewPassword extends React.Component<any, any> {
                              alt="Посмотреть пароль"/>
                     </div>
 
-                    <Link className="btn" to="/security/login">Сохранить</Link>
+                    <Link className="btn" to="/login">Сохранить</Link>
                 </form>
             </div>
         );

@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59df2f56-56be-4ccb-9152-266bc0aef8df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/icons/lk-base/box-arrow-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/lk-base/chevron-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/lk-base/list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/lk-base/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icons/lk-base/x-lg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/lk/lk-base.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/log/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/log/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/log/registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/log/registration.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/log/log-base.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/security/security-base.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/log/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/security/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/log/new-password.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/security/new-password.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/log/password-recovery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/security/password-recovery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/log/registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/security/registration.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/lk/lk-base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/lk/lk-base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/lk/lk-base.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/lk/lk-base.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/lk/lk-base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/lk/lk-base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/log/log.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/security/security.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/log/log.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/security/security.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/log/log.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/security/security.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +30,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,20 +54,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyRecord-react-npmerr" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="E:\work\MyRecords\MyRecord-react\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\work\MyRecords\MyRecord-react\public\images" />
-      <recent name="E:\work\MyRecords\MyRecord-react\public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\work\MyRecords\MyRecord-react\src" />
       <recent name="E:\work\MyRecords\MyRecord-react\src\components\login" />
@@ -56,8 +71,13 @@
       <recent name="E:\work\MyRecords\MyRecord-react\public\images\icons" />
       <recent name="E:\work\MyRecords\MyRecord-react\public\css" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\work\MyRecords\MyRecord-react\public\images\icons\lk-base" />
+      <recent name="E:\work\MyRecords\MyRecord-react\public\images" />
+      <recent name="E:\work\MyRecords\MyRecord-react\public" />
+    </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -71,22 +91,46 @@
       <workItem from="1678875042810" duration="3297000" />
       <workItem from="1678989922666" duration="22631000" />
       <workItem from="1679123729398" duration="3459000" />
+      <workItem from="1679218958900" duration="7094000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="387" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1679219195258">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="387" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1679219195258" />
+    <state x="322" y="164" key="EditFileWatcherDialog" timestamp="1679220134943">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="322" y="164" key="EditFileWatcherDialog/0.0.1366.728@0.0.1366.728" timestamp="1679220134943" />
+    <state x="428" y="123" key="FileChooserDialogImpl" timestamp="1679221737962">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="428" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1679221737962" />
+    <state x="186" y="10" key="SettingsEditor" timestamp="1679220136161">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1679220136161" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1679222943085">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1679222943085" />
   </component>
 </project>
