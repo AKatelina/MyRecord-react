@@ -8,7 +8,7 @@ class Login extends React.Component<any, any> {
         super(props);
         this.state = {
             passwordType: true,
-            loginPhone: '',
+            loginPhone: '+7 (',
             loginPassword: ''
         };
         this.handleInputChange = this.handleInputChange.bind(this);
@@ -17,13 +17,32 @@ class Login extends React.Component<any, any> {
 
     handleInputChange(event: any) {
         const target = event.target;
-        const value = target.value;
-        const name = target.name;
+        let value = target.value;
+        let name = target.name;
 
         this.setState({
             [name]: value
         });
     }
+
+    // let num = '+7 (';
+    // if (val.length <= 4) {
+    // num = '+7 (';
+    // } else if (val.length < 8) {
+    //     num = `${val.substring(0, 4)}${val.substring(4, 7)}`;
+    // } if (val.length < 19) {
+    //     num = `${val.substring(0, 4)}${val.substring(4, 18)}`;
+    // }
+    // if (val.length === 6) {
+    //     num = `${val.substring(0, 3)}${val.substring(3, 6)})`;
+    //     num = num.trim();
+    // }
+    // if (val.length === 6) {
+    //     num = `${val.substring(0, 3)}${val.substring(3, 6)})`;
+    //     num = num.trim();
+    // }
+    // num = num.trim();
+
 
     securityAuth() {
         const data = {username: this.state.loginPhone, password: this.state.loginPassword};
@@ -48,6 +67,10 @@ class Login extends React.Component<any, any> {
         });
     }
 
+    changePhone() {
+
+    }
+
     render() {
         return (
             <div>
@@ -60,7 +83,8 @@ class Login extends React.Component<any, any> {
                             id="loginPhone"
                             name="loginPhone"
                             type="tel"
-                            placeholder="Номер телефона"
+                            placeholder="+7"
+                            maxLength={18}
                             value={this.state.loginPhone}
                             onChange={this.handleInputChange}
                             autoFocus required/>
