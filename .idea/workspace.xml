@@ -2,13 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59df2f56-56be-4ccb-9152-266bc0aef8df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AppRouter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/security/login-old.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/security/new-password-old.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/security/password-recovery-old.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/security/registration-old.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/auth/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/protectRoutes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routing/AppRouting.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppRouter.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/lk/lk-base.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/lk/lk-base.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/security/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/security/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/security/new-password.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/security/new-password.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/security/password-recovery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/security/password-recovery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/security/registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/security/registration.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/security/security-base.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/security/security-base.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routing/routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routing/utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +43,7 @@
       <list>
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -40,7 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/security" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -50,17 +69,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\work\MyRecords\MyRecord-react\public\images\icons\lk-base" />
-      <recent name="E:\work\MyRecords\MyRecord-react\public\images" />
-      <recent name="E:\work\MyRecords\MyRecord-react\public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\MyRecords\MyRecord-react\src\components\security" />
+      <recent name="E:\work\MyRecords\MyRecord-react\src\components\lk" />
       <recent name="E:\work\MyRecords\MyRecord-react\src" />
       <recent name="E:\work\MyRecords\MyRecord-react\src\components\login" />
       <recent name="E:\work\MyRecords\MyRecord-react\src\components" />
-      <recent name="E:\work\MyRecords\MyRecord-react\public\images\icons" />
-      <recent name="E:\work\MyRecords\MyRecord-react\public\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\work\MyRecords\MyRecord-react\src\components" />
+      <recent name="E:\work\MyRecords\MyRecord-react\src\routing" />
+      <recent name="E:\work\MyRecords\MyRecord-react\public\images\icons\lk-base" />
+      <recent name="E:\work\MyRecords\MyRecord-react\public\images" />
+      <recent name="E:\work\MyRecords\MyRecord-react\public" />
     </key>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
@@ -82,6 +103,7 @@
       <workItem from="1679309286784" duration="20000" />
       <workItem from="1679310020723" duration="594000" />
       <workItem from="1679321466754" duration="11219000" />
+      <workItem from="1679423987534" duration="14653000" />
     </task>
     <servers />
   </component>
@@ -102,6 +124,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="425" y="174" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1679425207842">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="425" y="174" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/-1920.-305.1920.1040@0.0.1366.728" timestamp="1679425207842" />
     <state x="387" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1679219195258">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

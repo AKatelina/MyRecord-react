@@ -1,132 +1,102 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import axios from "axios";
+import React, {useState} from 'react';
+import {useAuth} from "../../hooks/auth";
 
-class Registration extends React.Component<any, any> {
-    constructor(props: any) {
-        super(props);
-        this.state = {
-            newPasswordType: true,
-            repeatPasswordType: true,
-            phone: '',
-            pass1: '',
-            pass2: '',
+export default function Registration() {
+    const [newPasswordType, setNewPasswordType] = useState(true);
+    const [repeatPasswordType, setRepeatPasswordType] = useState(true);
+    const [phone, setPhone] = useState('');
+    const [newPassword, setNewPassword] = useState('');
+    const [repeatPassword, setRepeatPassword] = useState('');
+    const {registration} = useAuth();
 
-        };
-        this.handleInputChange = this.handleInputChange.bind(this);
-        this.loginReg = this.loginReg.bind(this);
+    function toggleNewPasswordType() {
+        setNewPasswordType(!newPasswordType)
     }
 
-
-
-    toggleNewPasswordType() {
-        this.setState({
-            newPasswordType: !(this.state.newPasswordType)
-        });
+    function toggleRepeatPasswordType() {
+        setRepeatPasswordType(!repeatPasswordType)
     }
 
-    toggleRepeatPasswordType() {
-        this.setState({
-            repeatPasswordType: !(this.state.repeatPasswordType)
-        });
+    function handlePhoneChange(e: { target: { value: any; }; }) {
+        setPhone(e.target.value)
     }
-    handleInputChange(event: any) {
-        const target = event.target;
-        const value = target.type === 'checkbox' ? target.checked : target.value;
-        const name = target.name;
 
-        this.setState({
-            [name]: value
-        });
+    function handleNewPasswordChange(e: { target: { value: any; }; }) {
+        setNewPassword(e.target.value)
     }
-    loginReg() {
-        if (this.state.pass1 == this.state.pass2) {
-            const data = {phone: this.state.phone, password: this.state.pass1};
-            axios({
 
-                url: 'http://localhost:8085/registration',
-                headers: {'Content-Type': 'application/json'},
-                withCredentials: true,
-                method: "POST",
-                data: data,
-            })
-                .then(result => {
+    function handleRepeatPasswordChange(e: { target: { value: any; }; }) {
+        setRepeatPassword(e.target.value)
+    }
 
-                    if (result.status == 204 || result.status == 200) {
-                        this.setState({pass1: '', pass2: ''});
-
-                    }
-
-                }).catch(error => {
-                // this.changeError(true)
-            })
+    function loginReg() {
+        if (newPassword == repeatPassword) {
+            const data = {phone: phone, password: newPassword};
+            registration(data);
+            setNewPassword('');
+            setRepeatPassword('')
         }
-
-
     }
 
-    render() {
-        return (
-            <div>
-                <form>
-                    <h1>РЕГИСТРАЦИЯ</h1>
+    return (
+        <div>
+            <form>
+                <h1>РЕГИСТРАЦИЯ</h1>
 
-                    <div>
-                        <input
-                            name="phone"
+                <div>
+                    <input
+                        name="phone"
+                        value={phone}
+                        onChange={handlePhoneChange}
+                        id="registration-phone" type="phone" placeholder="phone"/>
+                    <label htmlFor="registration-phone" hidden>Телефон</label>
+                </div>
 
-                            value={this.state.phone}
-                            onChange={this.handleInputChange}
-                            id="registration-mail" type="phone" placeholder="phone"/>
-                        <label htmlFor="registration-mail" hidden>Почта</label>
-                    </div>
+                <div className="password-toggle-input">
+                    <input
+                        name="newPassword"
+                        value={newPassword}
+                        onChange={handleNewPasswordChange}
+                        id="registration-password"
+                        type={newPasswordType ? 'password' : 'text'}
+                        placeholder="Пароль"/>
+                    <label htmlFor="registration-password" hidden>Пароль</label>
+                    <img onClick={toggleNewPasswordType}
+                         className="eye-open-icon"
+                         src={newPasswordType ?
+                             '../images/icons/login/eye-fill.svg'
+                             : '../images/icons/login/eye-slash-fill.svg'}
+                         alt="Посмотреть пароль"/>
+                </div>
 
-                    <div className="password-toggle-input">
-                        <input
-                            name="pass1"
+                <div className="password-toggle-input">
+                    <input
+                        name="pass2"
+                        value={repeatPassword}
+                        onChange={handleRepeatPasswordChange}
+                        id="registration-password-repeat"
+                        type={repeatPasswordType ? 'password' : 'text'}
+                        placeholder="Повторите пароль"/>
+                    <label htmlFor="registration-password-repeat" hidden>Повторите пароль</label>
+                    <img onClick={toggleRepeatPasswordType}
+                         className="eye-open-icon"
+                         src={repeatPasswordType ?
+                             '../images/icons/login/eye-fill.svg'
+                             : '../images/icons/login/eye-slash-fill.svg'}
+                         alt="Посмотреть пароль"/>
+                </div>
 
-                            value={this.state.pass1}
-                            onChange={this.handleInputChange}
-                            id="registration-password"
-                            type={this.state.newPasswordType ? 'password' : 'text'}
-                            placeholder="Пароль"/>
-                        <label htmlFor="registration-password" hidden>Пароль</label>
-                        <img onClick={() => this.toggleNewPasswordType()} className="eye-open-icon"
-                             src={this.state.newPasswordType ?
-                                 '../images/icons/login/eye-fill.svg' : '../images/icons/login/eye-slash-fill.svg'}
-                             alt="Посмотреть пароль"/>
-                    </div>
+                <div className="checkbox-wrap">
+                    <label htmlFor="registration-agreement" hidden>Соглашение</label>
+                    <input id="registration-agreement" type="checkbox"/>
+                    <span>Я&nbsp;принимаю </span>
+                    <a href="#">условия лицензионного договора</a>
+                    <span> и&nbsp;разрешаю </span>
+                    <a href="#">обработку персональных данных</a>
+                </div>
 
-                    <div className="password-toggle-input">
-                        <input
-                            name="pass2"
-
-                            value={this.state.pass2}
-                            onChange={this.handleInputChange}
-                            id="registration-password-repeat"
-                            type={this.state.repeatPasswordType ? 'password' : 'text'}
-                            placeholder=" Повторите пароль"/>
-                        <label htmlFor="registration-password-repeat" hidden>Повторите пароль</label>
-                        <img onClick={() => this.toggleRepeatPasswordType()} className="eye-open-icon"
-                             src={this.state.repeatPasswordType ?
-                                 '../images/icons/login/eye-fill.svg' : '../images/icons/login/eye-slash-fill.svg'}
-                             alt="Посмотреть пароль"/>
-                    </div>
-
-                    <div className="checkbox-wrap">
-                        <label htmlFor="registration-agreement" hidden>Соглашение</label>
-                        <input id="registration-agreement" type="checkbox"/>
-                        <span>Я&nbsp;принимаю </span>
-                        <a href="#">условия лицензионного договора</a>
-                        <span> и&nbsp;разрешаю </span>
-                        <a href="#">обработку персональных данных</a>
-                    </div>
-
-                    <button type={"button"} onClick={() => this.loginReg()} className="btn">Зарегистрироваться</button>
-                </form>
-            </div>
-        )
-    }
+                <button type={"button"} onClick={loginReg} className="btn">Зарегистрироваться</button>
+            </form>
+        </div>
+    )
 }
-
-export default Registration;
