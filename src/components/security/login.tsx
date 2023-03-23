@@ -22,7 +22,11 @@ export default function Login() {
     }
 
     function handleLogin() {
-        const data = {loginPhone, loginPassword};
+        const data = {
+            'username':loginPhone,
+            'password':loginPassword
+
+        };
         login(data);
     }
 

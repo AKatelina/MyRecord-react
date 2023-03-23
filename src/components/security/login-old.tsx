@@ -47,7 +47,7 @@ class Login extends React.Component<any, any> {
     securityAuth() {
         const data = {username: this.state.loginPhone, password: this.state.loginPassword};
         axios({
-            url: 'http://localhost:8085/api/login',
+            url: 'http://192.168.31.231:8092/api/login',
             headers: {'Content-Type': 'application/json'},
             withCredentials: true,
             method: "POST",

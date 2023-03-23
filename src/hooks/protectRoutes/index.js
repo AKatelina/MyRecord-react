@@ -5,5 +5,6 @@ import React from "react";
 export const ProtectRoutes = () => {
     const { cookies } = useAuth();
 
-    return cookies.token ? <Outlet/> : <Navigate to='/login' exact />
+    console.log(cookies);
+    return cookies.jwt_hp ? <Outlet/> : <Navigate to='/login' exact />
 };
