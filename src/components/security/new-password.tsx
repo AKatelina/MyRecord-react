@@ -1,60 +1,52 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 
-class NewPassword extends React.Component<any, any> {
-    constructor(props: any) {
-        super(props);
-        this.state = {
-            newPasswordType: true,
-            repeatPasswordType: true
-        };
+export default function NewPassword() {
+    const [newPasswordType, setNewPasswordType] = useState(true);
+    const [repeatPasswordType, setRepeatPasswordType] = useState(true);
+
+    function toggleNewPasswordType() {
+        setNewPasswordType(!newPasswordType)
     }
 
-    toggleNewPasswordType() {
-        this.setState({
-            newPasswordType: !(this.state.newPasswordType)
-        });
+    function toggleRepeatPasswordType() {
+        setRepeatPasswordType(!repeatPasswordType)
     }
 
-    toggleRepeatPasswordType() {
-        this.setState({
-            repeatPasswordType: !(this.state.repeatPasswordType)
-        });
-    }
+    return (
+        <div>
+            <form>
+                <h1>СОЗДАНИЕ НОВОГО&nbsp;ПАРОЛЯ</h1>
 
-    render() {
-        return (
-            <div>
-                <form>
-                    <h1>СОЗДАНИЕ НОВОГО&nbsp;ПАРОЛЯ</h1>
+                <div className="password-toggle-input">
+                    <input id="new-password"
+                           type={newPasswordType ? 'password' : 'text'}
+                           placeholder="Новый пароль"
+                           autoFocus/>
+                    <label htmlFor="new-password" hidden>Новый пароль</label>
+                    <img onClick={toggleNewPasswordType}
+                         className="eye-open-icon"
+                         src={newPasswordType ?
+                             '../images/icons/login/eye-fill.svg'
+                             : '../images/icons/login/eye-slash-fill.svg'}
+                         alt="Посмотреть пароль"/>
+                </div>
 
-                    <div className="password-toggle-input">
-                        <input id="new-password"
-                               type={this.state.newPasswordType ? 'password' : 'text'}
-                               placeholder="Новый пароль" autoFocus/>
-                        <label htmlFor="new-password" hidden>Новый пароль</label>
-                        <img onClick={() => this.toggleNewPasswordType()} className="eye-open-icon"
-                             src={this.state.newPasswordType ?
-                                 '../images/icons/login/eye-fill.svg' : '../images/icons/login/eye-slash-fill.svg'}
-                             alt="Посмотреть пароль"/>
-                    </div>
+                <div className="password-toggle-input">
+                    <input id="new-password-repeat"
+                           type={repeatPasswordType ? 'password' : 'text'}
+                           placeholder="Повторите пароль"/>
+                    <label htmlFor="new-password-repeat" hidden>Повторите пароль</label>
+                    <img onClick={toggleRepeatPasswordType}
+                         className="eye-open-icon"
+                         src={repeatPasswordType ?
+                             '../images/icons/login/eye-fill.svg'
+                             : '../images/icons/login/eye-slash-fill.svg'}
+                         alt="Посмотреть пароль"/>
+                </div>
 
-                    <div className="password-toggle-input">
-                        <input id="new-password-repeat"
-                               type={this.state.repeatPasswordType ? 'password' : 'text'}
-                               placeholder="Повторите пароль"/>
-                        <label htmlFor="new-password-repeat" hidden>Повторите пароль</label>
-                        <img onClick={() => this.toggleRepeatPasswordType()} className="eye-open-icon"
-                             src={this.state.repeatPasswordType ?
-                                 '../images/icons/login/eye-fill.svg' : '../images/icons/login/eye-slash-fill.svg'}
-                             alt="Посмотреть пароль"/>
-                    </div>
-
-                    <Link className="btn" to="/login">Сохранить</Link>
-                </form>
-            </div>
-        );
-    }
+                <Link className="btn" to="/login">Сохранить</Link>
+            </form>
+        </div>
+    )
 }
-
-export default NewPassword;

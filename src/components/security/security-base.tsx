@@ -2,7 +2,7 @@ import React from 'react';
 import {Outlet, Link} from "react-router-dom";
 import '../../css/security/security.css';
 
-function SecurityBase() {
+export default function SecurityBase() {
     return (
         <div className="security-main">
             <div className="header">
@@ -24,7 +24,5 @@ function SecurityBase() {
                 </div>
             </div>
         </div>
-    );
+    )
 }
-
-export default SecurityBase;
