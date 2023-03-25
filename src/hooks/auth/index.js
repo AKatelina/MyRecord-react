@@ -12,61 +12,88 @@ export const UserProvider = ({children}) => {
 
     const login = async (data) => {
         axios({
-            url: 'http://192.168.31.231:8092/api/login',
+            url: 'https://api.my-record.dev/api/login',
             headers: {'Content-Type': 'application/json'},
             withCredentials: true,
             method: "POST",
             data: data
-        }).then(result => {
-            if (result.status === 204 || result.status === 200) {
-                navigate('/');
-            }
-        }).catch(error => {
-            // this.changeError(true)
-        });
-        // setCookies('token', 'i"m cookie from login'); // your token
-        // setCookies('token', res.data.token); // your token
-        // setCookies('name', res.data.name); // optional data
+        })
+            .then(result => {
+                if (result.status === 204 || result.status === 200) {
+                    navigate('/');
+                }
+            })
+            .catch(error => {
+            });
     };
 
     const registration = async (data) => {
         axios({
-            url: 'http://192.168.31.231:8092/registration',
+            url: 'https://api.my-record.dev/registration',
             headers: {'Content-Type': 'application/json'},
             withCredentials: true,
             method: "POST",
             data: data,
-        }).then(result => {
-            if (result.status === 204 || result.status === 200) {
-                login(data);
-                navigate('/');
-            }
-        }).catch(error => {
-            // this.changeError(true)
-        });
+        })
+            .then(result => {
+                if (result.status === 204 || result.status === 200) {
+                    navigate('/');
+                }
+            })
+            .catch(error => {
+            });
 
-        // setCookies('token', 'i"m cookie from registration'); // your token
-        navigate('/');
     };
 
-    // const login = async ({ email, password }) => {
-    //     const res = await api.post('/auth', {
-    //         email: email,
-    //         password: password
-    //     });
-    //
-    //     setCookies('token', res.data.token); // your token
-    //     setCookies('name', res.data.name); // optional data
-    //
-    //     navigate('/home');
-    // };
 
     const logout = () => {
-        // ['token', 'name'].forEach(
-        ['jwt_hp'].forEach(
-            obj => removeCookie(obj)
-        ); // remove data save in cookies
-        navigate('/login');
+        axios({
+            url: 'https://api.my-record.dev/logout',
+            headers: {'Content-Type': 'application/json'},
+            withCredentials: true,
+            method: "GET"
+        })
+            .then(result => {
+                if (result.status === 204 || result.status === 200) {
+                    navigate('/');
+                }
+            })
+            .catch(error => {
+            });
+    };
+
+    const changePassword = async (data) => {
+        axios({
+            url: 'https://api.my-record.dev/api/lk/password/reset',
+            headers: {'Content-Type': 'application/json'},
+            withCredentials: true,
+            method: "POST",
+            data: data
+        })
+            .then(result => {
+                if (result.status === 204 || result.status === 200) {
+                    navigate('/');
+                }
+            })
+            .catch(error => {
+            });
+    };
+
+    const sendPhoneCode = async (data) => {
+        axios({
+            url: 'https://api.my-record.dev/api/send-phone-kode',
+            headers: {'Content-Type': 'application/json'},
+            withCredentials: true,
+            method: "POST",
+            data: data
+        })
+            .then(result => {
+                if (result.status === 204 || result.status === 200) {
+                    navigate('/');
+                }
+            })
+            .catch(error => {
+            });
     };
 
     const value = useMemo(
