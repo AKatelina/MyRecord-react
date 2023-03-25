@@ -5,8 +5,7 @@ import {BrowserRouter} from "react-router-dom";
 import AppRouting from "./routing/AppRouting";
 import AppProvider from "./hooks";
 
-const rootElement = document.getElementById('root') as HTMLElement;
-const root = createRoot(rootElement);
+const root = createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
     <StrictMode>

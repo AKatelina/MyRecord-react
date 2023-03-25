@@ -44,7 +44,7 @@ class RegistrationOld extends React.Component<any, any> {
             const data = {phone: this.state.phone, password: this.state.pass1};
             axios({
 
-                url: 'http://192.168.31.231:8092/registration',
+                url: 'https://api.my-record.dev/registration',
                 headers: {'Content-Type': 'application/json'},
                 withCredentials: true,
                 method: "POST",
